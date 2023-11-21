@@ -32,7 +32,7 @@ function App() {
    }
 
   return (
-    <div className="sign_in">
+    <div className="bg-sky-500/100">
       <form className="form" onSubmit={handleSubmit}>
         <fieldset>
           <legend>Sign-in</legend>
