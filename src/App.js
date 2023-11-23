@@ -32,10 +32,10 @@ function App() {
    }
 
   return (
-    <div className="bg-sky-500/100">
-      <form className="form" onSubmit={handleSubmit}>
-        <fieldset>
-          <legend>Sign-in</legend>
+    <div className="h-full bg-sky-500/100 py-16 px-16">
+      <form className="py-10 bg-white" onSubmit={handleSubmit}>
+        <fieldset className=" py-16 m-5">
+          <legend className="text-xl p-2 text-center underline">Sign-in</legend>
 
           <input
             type="email"
@@ -44,7 +44,7 @@ function App() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="form_input"
+            className="w-52 "
             
           />
           <br />
@@ -55,7 +55,7 @@ function App() {
           value={formData.password}
           onChange={handleChange}
           required
-          className="form_input"
+          className="w-52 "
           />
           <br />
           <input
@@ -65,7 +65,7 @@ function App() {
           value={formData.passwordConfirm}
           onChange={handleChange}
           required
-          className="form_input"
+          className="w-52 "
         />
         <br />
           <input
@@ -77,7 +77,7 @@ function App() {
         />
         <label htmlFor="remember_password">Remember password</label>
         <br />
-        <button type="submit">Sign In</button>
+        <button type="submit" className="border-solid border-8 p-2 border-inherit">Sign In</button>
         </fieldset>
       </form>
     </div>
